@@ -53,7 +53,7 @@ auto Fade = [](int _color, bool _inc, int _r, int _g, int _b, int _delay) {
         for (_col = start; _col >= end; _col--)
         {
             analogWrite(_pin, _col);
-            if (_col < 60 || _col > 180)
+            if (_col > 60 || _col < 180)
             {
                 delay(_delay);
             }
